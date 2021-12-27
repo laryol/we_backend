@@ -91,6 +91,7 @@ app.get("/summary", checkLogin, async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
+
   const payload = req.body;
   const sessionId = await authService.login(payload.email, payload.password);
   if (!sessionId) {

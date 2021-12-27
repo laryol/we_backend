@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "i3": "node index3.js",
+    "test2": "node index2.js",
     "test": "jest",
     "test:api": "jest api-tests/",
     "postinstall": "tsc",
